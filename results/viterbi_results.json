@@ -1,0 +1,26 @@
+{
+  "clean": {
+    "raw_wer": 0.0541,
+    "viterbi_wer": 0.0606,
+    "delta_wer": 0.0064,
+    "words_changed": 54
+  },
+  "noise_5db": {
+    "raw_wer": 0.0572,
+    "viterbi_wer": 0.0651,
+    "delta_wer": 0.008,
+    "words_changed": 52
+  },
+  "noise_-5db": {
+    "raw_wer": 0.1045,
+    "viterbi_wer": 0.1181,
+    "delta_wer": 0.0136,
+    "words_changed": 99
+  },
+  "silence": {
+    "raw_wer": 0.1806,
+    "viterbi_wer": 0.1992,
+    "delta_wer": 0.0186,
+    "words_changed": 125
+  }
+}

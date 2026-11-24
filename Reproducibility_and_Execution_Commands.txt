@@ -1,0 +1,17 @@
+All modular scripts live in src/ (Conda environment cse250a), and the exact full-vocabulary Soft
+HMM and EM experiments live in phase2_imputation_full.ipynb.
+# 1. Bigram LM (MLE, MAP, KN), Exact Bayes, Oracle & Noise Evaluations
+python src/language_models.py
+python src/bayes_inference.py
+python src/evaluate.py
+# 2. Exact vs. Approximate Inference (Importance vs. Uniform Sampling)
+python src/approx_inference.py
+# 3. Acoustic-Only wav2vec2 CTC Transcripts & Phonetic Viterbi HMM Sweeps
+python src/run_wav2vec2.py --limit 0
+python src/viterbi_hmm.py --input_json data/phase1_outputs.json \
+--out_prefix viterbi_whisper --limit 0 --tau 0.2 --emission_weight 12.0
+python src/viterbi_hmm.py --input_json data/phase1_wav2vec2.json \
+--out_prefix viterbi_wav2vec2 --limit 0 --tau 0.80 --emission_weight 8.0
+# 4. Exact Full-Vocab Soft HMM, MLE Emissions, and Unsupervised EM BN
+# Execute Cells 1-11 in phase2_imputation_full.ipynb
+#

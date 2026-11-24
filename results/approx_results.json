@@ -1,0 +1,103 @@
+{
+  "num_targets": 300,
+  "exact_top1_acc": 0.07,
+  "exact_avg_ms": 35.51,
+  "approx_results": [
+    {
+      "sampler": "importance",
+      "n_samples": 100,
+      "exact_agreement": 0.2867,
+      "oracle_top1_acc": 0.0467,
+      "avg_ms": 0.12,
+      "speedup": 300.46
+    },
+    {
+      "sampler": "importance",
+      "n_samples": 500,
+      "exact_agreement": 0.5267,
+      "oracle_top1_acc": 0.0633,
+      "avg_ms": 0.48,
+      "speedup": 73.83
+    },
+    {
+      "sampler": "importance",
+      "n_samples": 1000,
+      "exact_agreement": 0.6433,
+      "oracle_top1_acc": 0.0733,
+      "avg_ms": 0.82,
+      "speedup": 43.24
+    },
+    {
+      "sampler": "importance",
+      "n_samples": 2500,
+      "exact_agreement": 0.7333,
+      "oracle_top1_acc": 0.07,
+      "avg_ms": 1.76,
+      "speedup": 20.13
+    },
+    {
+      "sampler": "importance",
+      "n_samples": 5000,
+      "exact_agreement": 0.81,
+      "oracle_top1_acc": 0.07,
+      "avg_ms": 3.07,
+      "speedup": 11.58
+    },
+    {
+      "sampler": "importance",
+      "n_samples": 10000,
+      "exact_agreement": 0.8567,
+      "oracle_top1_acc": 0.0667,
+      "avg_ms": 5.2,
+      "speedup": 6.83
+    },
+    {
+      "sampler": "uniform",
+      "n_samples": 100,
+      "exact_agreement": 0.0,
+      "oracle_top1_acc": 0.0,
+      "avg_ms": 0.12,
+      "speedup": 302.95
+    },
+    {
+      "sampler": "uniform",
+      "n_samples": 500,
+      "exact_agreement": 0.01,
+      "oracle_top1_acc": 0.0067,
+      "avg_ms": 0.57,
+      "speedup": 62.06
+    },
+    {
+      "sampler": "uniform",
+      "n_samples": 1000,
+      "exact_agreement": 0.02,
+      "oracle_top1_acc": 0.0067,
+      "avg_ms": 1.07,
+      "speedup": 33.28
+    },
+    {
+      "sampler": "uniform",
+      "n_samples": 2500,
+      "exact_agreement": 0.0867,
+      "oracle_top1_acc": 0.01,
+      "avg_ms": 2.56,
+      "speedup": 13.85
+    },
+    {
+      "sampler": "uniform",
+      "n_samples": 5000,
+      "exact_agreement": 0.1233,
+      "oracle_top1_acc": 0.0167,
+      "avg_ms": 4.85,
+      "speedup": 7.32
+    },
+    {
+      "sampler": "uniform",
+      "n_samples": 10000,
+      "exact_agreement": 0.27,
+      "oracle_top1_acc": 0.0367,
+      "avg_ms": 9.0,
+      "speedup": 3.94
+    }
+  ]
+}

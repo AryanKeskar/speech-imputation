@@ -1,0 +1,201 @@
+{
+  "num_utterances": 1677,
+  "tau": 0.6,
+  "threshold_sweep": [
+    {
+      "tau": 0.2,
+      "precision": 0.6807817589576547,
+      "recall": 0.15401621223286663,
+      "f1": 0.2512019230769231,
+      "tp": 209,
+      "fp": 98,
+      "fn": 1148
+    },
+    {
+      "tau": 0.4,
+      "precision": 0.5742574257425742,
+      "recall": 0.341930729550479,
+      "f1": 0.4286374133949191,
+      "tp": 464,
+      "fp": 344,
+      "fn": 893
+    },
+    {
+      "tau": 0.6,
+      "precision": 0.45816266822703333,
+      "recall": 0.5770081061164333,
+      "f1": 0.5107632093933463,
+      "tp": 783,
+      "fp": 926,
+      "fn": 574
+    },
+    {
+      "tau": 0.75,
+      "precision": 0.35586690017513134,
+      "recall": 0.7487103905674282,
+      "f1": 0.48243114909781576,
+      "tp": 1016,
+      "fp": 1839,
+      "fn": 341
+    },
+    {
+      "tau": 0.9,
+      "precision": 0.24106251248252447,
+      "recall": 0.8894620486366986,
+      "f1": 0.37932118164676304,
+      "tp": 1207,
+      "fp": 3800,
+      "fn": 150
+    }
+  ],
+  "smoothing_ablation": [
+    {
+      "noise_mode": "noise_-5db",
+      "method": "mle",
+      "use_bidirectional": true,
+      "acoustic_weight": 0.5,
+      "raw_wer": 0.1038,
+      "imputed_wer": 0.1569,
+      "wer_delta": 0.0531,
+      "flagged_errors": 875,
+      "top1_acc": 0.0,
+      "top5_acc": 0.0137
+    },
+    {
+      "noise_mode": "noise_-5db",
+      "method": "map",
+      "use_bidirectional": true,
+      "acoustic_weight": 0.5,
+      "raw_wer": 0.1038,
+      "imputed_wer": 0.157,
+      "wer_delta": 0.0531,
+      "flagged_errors": 875,
+      "top1_acc": 0.0034,
+      "top5_acc": 0.0149
+    },
+    {
+      "noise_mode": "noise_-5db",
+      "method": "kn",
+      "use_bidirectional": true,
+      "acoustic_weight": 0.5,
+      "raw_wer": 0.1038,
+      "imputed_wer": 0.1563,
+      "wer_delta": 0.0525,
+      "flagged_errors": 875,
+      "top1_acc": 0.0034,
+      "top5_acc": 0.0183
+    }
+  ],
+  "structure_ablation": [
+    {
+      "noise_mode": "noise_-5db",
+      "method": "kn",
+      "use_bidirectional": false,
+      "acoustic_weight": 0.0,
+      "raw_wer": 0.1038,
+      "imputed_wer": 0.16,
+      "wer_delta": 0.0562,
+      "flagged_errors": 875,
+      "top1_acc": 0.0046,
+      "top5_acc": 0.0103
+    },
+    {
+      "noise_mode": "noise_-5db",
+      "method": "kn",
+      "use_bidirectional": true,
+      "acoustic_weight": 0.0,
+      "raw_wer": 0.1038,
+      "imputed_wer": 0.1582,
+      "wer_delta": 0.0544,
+      "flagged_errors": 875,
+      "top1_acc": 0.0023,
+      "top5_acc": 0.016
+    },
+    {
+      "noise_mode": "noise_-5db",
+      "method": "kn",
+      "use_bidirectional": true,
+      "acoustic_weight": 0.5,
+      "raw_wer": 0.1038,
+      "imputed_wer": 0.1563,
+      "wer_delta": 0.0525,
+      "flagged_errors": 875,
+      "top1_acc": 0.0034,
+      "top5_acc": 0.0183
+    },
+    {
+      "noise_mode": "noise_-5db",
+      "method": "kn",
+      "use_bidirectional": true,
+      "acoustic_weight": 1.0,
+      "raw_wer": 0.1038,
+      "imputed_wer": 0.1556,
+      "wer_delta": 0.0518,
+      "flagged_errors": 875,
+      "top1_acc": 0.0034,
+      "top5_acc": 0.0206
+    },
+    {
+      "noise_mode": "noise_-5db",
+      "method": "kn",
+      "use_bidirectional": true,
+      "acoustic_weight": 2.0,
+      "raw_wer": 0.1038,
+      "imputed_wer": 0.1538,
+      "wer_delta": 0.05,
+      "flagged_errors": 875,
+      "top1_acc": 0.0034,
+      "top5_acc": 0.0183
+    }
+  ],
+  "noise_breakdown": [
+    {
+      "noise_mode": "clean",
+      "method": "kn",
+      "use_bidirectional": true,
+      "acoustic_weight": 2.0,
+      "raw_wer": 0.0476,
+      "imputed_wer": 0.0764,
+      "wer_delta": 0.0288,
+      "flagged_errors": 46,
+      "top1_acc": 0.0435,
+      "top5_acc": 0.0435
+    },
+    {
+      "noise_mode": "noise_5db",
+      "method": "kn",
+      "use_bidirectional": true,
+      "acoustic_weight": 2.0,
+      "raw_wer": 0.0572,
+      "imputed_wer": 0.0901,
+      "wer_delta": 0.0329,
+      "flagged_errors": 138,
+      "top1_acc": 0.0072,
+      "top5_acc": 0.0145
+    },
+    {
+      "noise_mode": "noise_-5db",
+      "method": "kn",
+      "use_bidirectional": true,
+      "acoustic_weight": 2.0,
+      "raw_wer": 0.1038,
+      "imputed_wer": 0.1538,
+      "wer_delta": 0.05,
+      "flagged_errors": 875,
+      "top1_acc": 0.0034,
+      "top5_acc": 0.0183
+    },
+    {
+      "noise_mode": "silence",
+      "method": "kn",
+      "use_bidirectional": true,
+      "acoustic_weight": 2.0,
+      "raw_wer": 0.1814,
+      "imputed_wer": 0.241,
+      "wer_delta": 0.0597,
+      "flagged_errors": 1827,
+      "top1_acc": 0.006,
+      "top5_acc": 0.0274
+    }
+  ]
+}
